@@ -1,28 +1,65 @@
 body div {
     display: flex;
-    flex-direction: column;
 }
-
 
 .header {
     background-color: #1F2937;
     display: flex;
-    flex-direction: row;;
     justify-content: space-between;
     align-items: center;
 }
 
-.header-logo {
+.header-logo, .intro-awesome {
     color: #F9FAF8;
+}
+
+.header-logo {
     font-size: 24px;
+}
+
+ul, .intro-text {
+    color: #E5E7EB;
+    font-size: 18px;  
 }
 
 ul {
     display: flex;
     list-style-type: none;
     padding: 0;
-    gap: 20px;
-    color: #E5E7EB;
-    font-size: 18px;    
+    gap: 20px;  
 }
 
+.intro {
+    display: flex;
+    background-color: #1F2937;
+}
+
+.left-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro > img {
+    max-width: 50%;
+    height: 50%;
+    align-self: center;
+}
+
+.intro-awesome {
+    font-size: 48px;
+    font-weight: 900;
+    margin: 16px 0;
+}
+
+button {
+    background-color: #3882F6;
+    color: white;
+    font-weight: bold;
+    padding: 15px 32px;
+    width: 200px;
+    border-radius: 10px;
+    align-self: center;
+    border: 0;
+    margin-bottom: 25px;
+}
